@@ -10,3 +10,12 @@ pom.xml.asc
 .lein-plugins/
 .lein-failures
 .nrepl-port
+
+*.jar
+*.class
+/.lein-*
+/.nrepl-port
+/.dir-locals.el
+/profiles.clj
+/dev/resources/local.edn
+/dev/src/local.clj
