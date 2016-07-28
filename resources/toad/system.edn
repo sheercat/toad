@@ -2,11 +2,14 @@
  {:app  duct.component.handler/handler-component
   :http ring.component.jetty/jetty-server}
  :endpoints
- {:example toad.endpoint.example/example-endpoint}
+ {:example toad.endpoint.example/example-endpoint
+  :hello toad.endpoint.hello/hello-endpoint}
  :dependencies
  {:http [:app]
-  :app  [:example]
-  :example []}
+  :app  [:example :hello]
+  :example []
+  :hello []
+  }
  :config
  {:app
   {:middleware
